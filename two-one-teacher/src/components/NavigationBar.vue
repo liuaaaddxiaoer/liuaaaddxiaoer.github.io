@@ -1,7 +1,7 @@
 <template>
   <header class="navBar-container">
     <i class="backArrowLeftItem" @click="goBack"></i>
-    <span class="title">我的标题</span>
+    <span class="title">{{title}}</span>
   </header>
 </template>
 

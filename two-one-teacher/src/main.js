@@ -5,7 +5,7 @@ import App from './App'
 import router from './router'
 import qs from 'qs'
 import config from './config/config'
-Vue.config.productionTip = false
+import store from './store'
 
 import axios from 'axios'
 import FastClick from 'fastclick'
@@ -15,7 +15,7 @@ Vue.component(Header.name,Header)
 
 FastClick.attach(document.body)
 
-
+Vue.config.productionTip = false
 axios.defaults.timeout = 5000;                        //响应时间
 axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=UTF-8';           //配置请求头
 axios.defaults.baseURL = 'http://t.tsapi.euming.com/OneTeacher';   //配置接口地址
@@ -39,6 +39,7 @@ new Vue({
   el: '#app',
   router,
   axios,
+  store,
   template: '<App/>',
   components: { App }
 })

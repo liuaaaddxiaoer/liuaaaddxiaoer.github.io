@@ -16,6 +16,8 @@
         }
     },
     mounted(){
+       this.$store.commit("title",'我的社群')
+
       this.$ajax.post('/ot/myGroup', {
         authcode: KTestAuthcode
       }).then(res => {

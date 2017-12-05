@@ -19,11 +19,11 @@
       </div>
     </header>
     <section>
-      <div class="me-buyitem">
+      <div class="me-buyitem" @click="goToBuyList">
         <i class="me-buyitem-icon"></i>
         <span>我买入的</span>
       </div>
-      <div class="me-sellitem">
+      <div class="me-sellitem" @click="goToSellList">
         <i class="me-sellitem-icon"></i>
         <span>我卖出的</span>
       </div>
@@ -49,6 +49,14 @@
             this.user = res.data.user
           }
         })
+    },
+    methods: {
+      goToBuyList() {
+          this.$router.push('./buyList')
+      },
+      goToSellList() {
+          this.$router.push('./sellList')
+      }
     }
   }
 </script>

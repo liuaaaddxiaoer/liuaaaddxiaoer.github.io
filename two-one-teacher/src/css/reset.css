@@ -6,6 +6,7 @@ html,body,div,h1,h2,h3,h4,h5,ul,li,ol,dl,dt,dd,table,tbody,thead,section,header,
   font-family: 'Microsoft YaHei';
   -webkit-tap-highlight-color: transparent;
   -webkit-user-select: none;
+  font-style: normal;
 }
 
 html,body {

@@ -21,15 +21,17 @@
       return {
         push: '',
         pop: '',
-//        navigationBarShow: true, // 是否显示导航栏
-        title: '首页'
       }
     },
+
     computed: {
       navigationBarShow: function () {
         return !(this.$route.fullPath === '/home'
         || this.$route.fullPath === '/interaction'
         || this.$route.fullPath === '/me')
+      },
+      title: function () {
+        return this.$store.state.title
       }
     },
     watch: {

@@ -1,12 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
 import Home from '@/components/Home'
 import Me from '@/components/Me'
 import Interaction from '@/components/Interaction'
 import CreateGroup from '@/components/CreateGroup'
 import MyGroup from '@/components/MyGroup'
-import Demo from '@/components/demo'
+import OrderList from '@/components/OrderList'
 Vue.use(Router)
 
 export default new Router({
@@ -35,6 +34,16 @@ export default new Router({
       path: '/myGroup',
       name: 'MyGroup',
       component: MyGroup
+    },
+    {
+      path: '/buyList',
+      name: 'BuyList',
+      component: OrderList
+    },
+    {
+      path: '/sellList',
+      name: 'SellList',
+      component: OrderList
     },
   ]
 })
