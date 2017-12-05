@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+html,body,div,h1,h2,h3,h4,h5,ul,li,ol,dl,dt,dd,table,tbody,thead,section,header,footer,span,img,a,i,b{
+  margin: 0;
+  padding: 0;
+  font-family: 'Microsoft YaHei';
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+}
+
+html,body {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  overflow: auto;
+}
+html {
+  overflow: hidden;
+}
+
+ul,ol {
+  list-style: none;
+}
+
+input,textarea,button{
+  border: none;
+  outline: none;
+  padding: 0 0.25rem;
+  background-color: transparent;
+  -webkit-appearance: none;
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.clearfix {
+  zoom:1
+}
+.flex {
+  -webkit-display: flex;
+  display: flex;
+}
