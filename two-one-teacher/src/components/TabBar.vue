@@ -47,7 +47,7 @@
   }
 
   .tabbar {
-    position: absolute;
+    position: fixed;
     border-top: 1px solid #eee;
     background-color: white;
     bottom: 0;

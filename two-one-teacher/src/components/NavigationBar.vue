@@ -36,7 +36,7 @@
     align-items: center;
     justify-content: center;
     height: 44px;
-    position: absolute;
+    position: fixed;
     z-index: 1000;
     left: 0;
     width: 100%;
